@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        let slideshow = {
+            photoList: ["sunset", "sunrise", "palms"],
+            currentPhotoIndex: 0,
+            nextPhoto: i,
+            let = (i >= 2) ? console.log(photoList) : "End of slideshow"
+        }
+
+        let slideshow = {
+            photoList: ["sunset", "sunrise", "palms"],
+            currentPhotoIndex: 0,
+            nextPhoto: function () {
+                if (this.currentPhotoIndex < this.photoList.length - 1{
+                    this.currentPhotoIndex++;
+                    this.getCurrentPhoto();
+                } else {
+                    console.log("End of slideshow");
+                }
+            },
+            previousPhoto: function () {
+                if (this.currentPhotoIndex > 0) {
+                    this.currentPhotoIndex--;
+                    this.getCurrentPhoto();
+                } else {
+                    console.log("Start of slideshow");
+                }
+            },
+            getCurrentPhoto: function () {
+                this.printCurrentPhoto();
+                return this.photoList[this.currentPhotoIndex];
+            }
+        }
+        play: function () {
+            this.playInterval = setInterval(function () {
+                this.nextPhoto()
+            }.bind(this), 2000);
+        }
+        slideshow.play();
+
+    </script>
+
+</body>
