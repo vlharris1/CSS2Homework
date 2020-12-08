@@ -1,0 +1,77 @@
+.myNav {
+    background-color: #333333;
+    overflow: hidden;
+}
+
+.myNav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.myNav a:hover {
+    background-color: #dddddd;
+    color: black;
+}
+
+input {
+    margin-top: 13px;
+}
+
+.icon {
+    
+    margin-right: 40px;
+    display: inline;
+}
+
+.myFoot {
+    background-color: #000000;
+    overflow: hidden;
+    position: sticky; 
+    left: 0;
+    bottom: 0;
+    width: 100%;      
+}
+
+.myFoot a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.myFoot a:hover {
+    background-color: #dddddd;
+    color: #333333;
+}
+
+.row {
+    list-style-type: none;
+}
+
+img {
+    border: 1px solid #f2f2f2;
+}
+
+li {font-family: 'Playfair Display', serif;}
+
+p {font-family: 'Libre Baskerville' serif;}
+
+img {box-shadow: 10px 10px 5px grey}
+
+.icon {
+    background-color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: #bfbfbf;}
+}
