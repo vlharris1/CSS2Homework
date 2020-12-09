@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="todo.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+    <div id="myDIV" class="header" bg-transparent>
+        <h1>My To Do List</h1>
+        <form action="#" th:action="@{/}" th:object="${project}" method="post">
+        <input type="text" th:field="*{task}" placeholder="More things...">
+        <span onclick="newElement()"><button>Add</button></span>
+        </form>
+    </div>
+
+    <ul id="myUL">
+        <li>Learn Latin</li>
+        <li class="checked">Buy a typewriter</li>
+        <li>Press a wildflower into my journal</li>
+        <li>Read The Bell Jar</li>
+        <li>Sketch my dog</li>
+        <li>Buy a tweed jacket</li>
+      </ul>
+
+    <script src="todo.js"></script>
+
+</body>
+
+</html>
