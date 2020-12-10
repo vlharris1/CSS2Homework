@@ -37,8 +37,8 @@ public class MainController {
 		return "todo.html";
 	}
 	
-	@RequestMapping("/index")
-	public String index() {
-		return "index.html";
+	@RequestMapping(value="/favorites")
+	public String favorites() {
+		return "favorites.html";
 	}
 }
